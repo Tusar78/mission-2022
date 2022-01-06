@@ -1,0 +1,103 @@
+/* Add "Yeseva", "Lobster" and "Poppins" fonts from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&family=Yeseva+One&display=swap');
+
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem 0 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Reuseable Layout */
+.bd-grid {
+    max-width: 1076px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Home Section start */
+.home {
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    padding-left: .75rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 4px;
+    height: 124px;
+    background-color: #ff5959;
+    border-radius: 5px;
+
+}
+
+.title--color {
+    color: #FFAD5A;
+}
+
+.home__text {
+    font-size: 18px;
+    /*I am using recommended line-height*/
+    line-height: 1.6;
+    color: #3E3E3E;
+    margin-top: 1.5rem;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: .75rem 2.125rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+
+}
+
+.btn-link--orange {
+    background-color: #ff5959;
+    color: #fff;
+}
+
+.scroll-down {
+    display: block;
+    font-size: 16px;
+    color: #434343;
+    margin-top: 2rem;
+}
+
+.home__img {
+    width: 420px;
+    justify-self: center;
+}
