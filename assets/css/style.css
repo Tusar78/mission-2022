@@ -140,11 +140,12 @@ p {
 .mission__module h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1.125rem 0;
+    padding: .875rem 0 1.125rem;
 }
 
-.mission__module img {
+.module__img {
     width: 126px;
+    height: 126px;
 }
 
 .mission__module p {
@@ -260,7 +261,7 @@ p {
     color: #ff5959;
 }
 
-.footer__copywrite {
+.footer__text--sub {
     font-family: 'Manrope', sans-serif;
     color: #D9DBE1;
     font-size: .875rem;
