@@ -103,6 +103,10 @@ a {
 }
 
 /* Start Mission section */
+.mission {
+    margin-left: auto;
+    margin-right: auto;
+}
 .mission__title {
     font-size: 3rem;
     text-align: center;
@@ -116,4 +120,21 @@ a {
 .mission__module {
     border-radius: .625rem;
     padding: 1rem;
+    background-color: #fff;
+}
+
+.mission__module img {
+    width: 100px;
+}
+
+.mission__module:nth-child(1) {
+    background-color: #edf5f6;
+}
+
+.mission__module:nth-child(2) {
+    background-color: #ffeeee;
+}
+
+.mission__module:nth-child(3) {
+    background-color: #fff4d6;
 }
