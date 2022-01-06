@@ -92,7 +92,7 @@ p {
     display: inline-block;
     padding: .75rem 2.125rem;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 
 }
 
@@ -164,17 +164,29 @@ p {
     background-color: #fff4d6;
 }
 
-/* Develop Section Start */
-.develop {
+/* Develop & Community Section Start */
+.develop,
+.community {
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.33fr 2fr;
+    column-gap: 4.5rem;
+    align-items: center;
+}
+
+.develop__title,
+.community__title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 1.25rem;
 }
 
 .community {
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: 2fr 1fr;
+    padding-top: 1rem;
+    grid-template-columns: 2fr 1.33fr;
 }
 
 .footer {
