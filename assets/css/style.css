@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 2rem 0 0;
     font-family: 'Poppins', sans-serif;
@@ -25,8 +29,13 @@ a {
     text-decoration: none;
 }
 
+p {
+    /*I am using recommended line-height*/
+    line-height: 1.6;
+}
+
 .section {
-    margin-bottom: 3rem;
+    padding-bottom: 5rem;
 }
 
 /* Reuseable Layout */
@@ -50,7 +59,7 @@ a {
 
 .title {
     font-family: 'Yeseva One', cursive;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
     padding-left: .75rem;
     text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
@@ -74,9 +83,7 @@ a {
 }
 
 .home__text {
-    font-size: 18px;
-    /*I am using recommended line-height*/
-    line-height: 1.6;
+    font-size: 1.125rem;
     color: #3E3E3E;
     margin-top: 1.5rem;
 }
@@ -96,7 +103,7 @@ a {
 
 .scroll-down {
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     color: #434343;
     margin-top: 2rem;
 }
@@ -111,10 +118,13 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
 .mission__title {
     font-size: 3rem;
+    font-weight: 700;
+    color: #13103A;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .mission__modules {
@@ -122,13 +132,24 @@ a {
 }
 
 .mission__module {
-    border-radius: .625rem;
-    padding: 1.5rem 1rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem 1.875rem 2rem;
     background-color: #fff;
 }
 
+.mission__module h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.125rem 0;
+}
+
 .mission__module img {
-    width: 100px;
+    width: 126px;
+}
+
+.mission__module p {
+    font-size: 1rem;
+    color: #424242;
 }
 
 .mission__module:nth-child(1) {
@@ -143,6 +164,7 @@ a {
     background-color: #fff4d6;
 }
 
+/* Develop Section Start */
 .develop {
     margin-left: auto;
     margin-right: auto;
@@ -157,10 +179,10 @@ a {
 
 .footer {
     background-color: #333;
-    padding: 1.5rem 0; 
+    padding: 1.5rem 0;
 }
 
-.footer > p {
+.footer>p {
     text-align: center;
     margin-bottom: 1rem;
     color: #fff;
