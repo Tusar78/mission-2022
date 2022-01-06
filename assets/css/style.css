@@ -101,3 +101,19 @@ a {
     width: 420px;
     justify-self: center;
 }
+
+/* Start Mission section */
+.mission__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mission__modules {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mission__module {
+    border-radius: .625rem;
+    padding: 1rem;
+}
